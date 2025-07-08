@@ -11,8 +11,9 @@ endif()
 
 project ("Login_System")
 
+
 # Add source to this project's executable.
-add_executable (Login_System "Login_System.cpp" "Login_System.h")
+add_executable (Login_System "Login_System.cpp" "Login_System.h" "include/account.h" "src/account.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Login_System PROPERTY CXX_STANDARD 20)
