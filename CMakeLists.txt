@@ -10,7 +10,7 @@ if (POLICY CMP0141)
 endif()
 
 project ("Login_System")
-
+include_directories(${CMAKE_SOURCE_DIR}/include/)
 
 # Add source to this project's executable.
 add_executable (Login_System "Login_System.cpp" "Login_System.h" "include/account.h" "src/account.cpp")

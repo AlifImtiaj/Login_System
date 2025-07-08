@@ -2,11 +2,12 @@
 //
 
 #include "Login_System.h"
+#include <account.h>
 
-using namespace std;
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	CreateAccount c1("Alif Imtiaj", "Password123");
+	c1.ShowInformation();
 	return 0;
 }
